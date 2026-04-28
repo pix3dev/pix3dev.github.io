@@ -5,14 +5,14 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Pix3 | The Technical Alchemist for 3D Playable Ads</title>
-    <meta name="description" content="Workstation-grade WebGL engine for 3D playable ads — AI-driven workflows and real-time collaboration.">
+    <title>Pix3 | The Technical Alchemist for 2D & 3D Playable Ads</title>
+    <meta name="description" content="Workstation-grade WebGL editor for 2D and 3D playable ads and mini-games — AI-driven workflows, real-time collaboration, one unified pipeline.">
     <link rel="canonical" href="https://pix3.dev/">
     <link rel="icon" type="image/webp" href="media/icon.webp">
     <!-- Open Graph / Social Preview -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Pix3 | The Technical Alchemist for 3D Playable Ads">
-    <meta property="og:description" content="Workstation-grade WebGL engine for 3D playable ads — AI-driven workflows and real-time collaboration.">
+    <meta property="og:title" content="Pix3 | The Technical Alchemist for 2D & 3D Playable Ads">
+    <meta property="og:description" content="Workstation-grade WebGL editor for 2D and 3D playable ads and mini-games — AI-driven workflows, real-time collaboration, one unified pipeline.">
     <meta property="og:url" content="https://pix3.dev/">
     <meta property="og:site_name" content="Pix3">
     <meta property="og:locale" content="en_US">
@@ -23,35 +23,24 @@
     <meta property="og:image:height" content="630">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pix3 | The Technical Alchemist for 3D Playable Ads">
-    <meta name="twitter:description" content="Workstation-grade WebGL engine for 3D playable ads — AI-driven workflows and real-time collaboration.">
+    <meta name="twitter:title" content="Pix3 | The Technical Alchemist for 2D & 3D Playable Ads">
+    <meta name="twitter:description" content="Workstation-grade WebGL editor for 2D and 3D playable ads and mini-games — AI-driven workflows, real-time collaboration, one unified pipeline.">
     <meta name="twitter:image" content="https://pix3.dev/media/editor-interface.jpg">
     <meta name="twitter:image:alt" content="Pix3 editor interface preview">
     <!-- Preload critical resources -->
     <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/fonts/spacegrotesk.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="media/editor-interface.jpg" as="image">
+    <link rel="preload" as="image" href="media/editor-interface.jpg"
+        imagesrcset="media/editor-interface.webp" type="image/webp" fetchpriority="high">
 
     <link rel="stylesheet" href="./style.css">
-
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-            (function (m, e, t, r, i, k, a) {
-                m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-                m[i].l = 1 * new Date();
-                for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
-                k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-            })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=108302071', 'ym');
-
-        ym(108302071, 'init', { ssr: true, webvisor: true, clickmap: true, ecommerce: "dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce: true, trackLinks: true });
-    </script>
 </head>
+
+<body class="selection:bg-primary selection:text-on-primary-container overflow-x-hidden">
+    <!-- Yandex.Metrika counter -->
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/108302071" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
-    <!-- /Yandex.Metrika counter -->
-
-<body class="selection:bg-primary selection:text-on-primary-container overflow-x-hidden">
     <!-- Top Navigation Bar -->
     <nav class="fixed top-0 w-full z-50 bg-zinc-950/60 backdrop-blur-xl no-line-rule bg-zinc-900/50">
         <div class="flex justify-between items-center px-8 h-16 max-w-screen-2xl mx-auto w-full">
@@ -59,7 +48,8 @@
                 <a href="/" class="flex items-center">
                     <picture>
                         <source srcset="media/splash-logo.webp" type="image/webp">
-                        <img src="media/splash-logo.png" alt="Pix3" class="h-8 w-auto">
+                        <img src="media/splash-logo.png" alt="Pix3" class="h-8 w-auto"
+                            width="756" height="300" decoding="async">
                     </picture>
                 </a>
                 <a href="https://github.com/pix3dev/pix3" target="_blank" rel="noopener noreferrer" class="hidden sm:flex items-center">
@@ -93,11 +83,11 @@
             </div>
             <h1
                 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-on-surface max-w-4xl mx-auto mb-6">
-                The Ultimate Editor for <span class="text-primary italic">3D Playable Ads</span> and Mini-Games
+                The Ultimate Editor for <span class="text-primary italic">2D &amp; 3D Playable Ads</span> and Mini-Games
             </h1>
             <p class="font-body text-lg text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed">
-                Zero-install WebGL editor. Build playable ads and mini-games directly in your browser — 
-                no downloads, no setup, no wait.
+                Zero-install WebGL editor with a unified 2D &amp; 3D pipeline. Build playable ads and mini-games
+                directly in your browser — no downloads, no setup, no wait.
             </p>
             <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-8">
                 <a href="https://editor.pix3.dev"
@@ -124,8 +114,9 @@
                     <picture>
                         <source srcset="media/editor-interface.webp" type="image/webp">
                         <img class="w-full h-auto object-cover opacity-90"
-                            data-alt="Professional Pix3 editor interface showing a 3D scene with textured blocks, scene tree hierarchy, asset browser with model previews, and detailed asset inspector."
-                            src="media/editor-interface.jpg" width="1200" height="675" />
+                            alt="Professional Pix3 editor interface showing a 3D scene with textured blocks, scene tree hierarchy, asset browser with model previews, and detailed asset inspector."
+                            src="media/editor-interface.jpg" width="1469" height="791"
+                            fetchpriority="high" decoding="async" />
                     </picture>
                     <!-- Floating Tech Accents -->
                     <div class="absolute top-4 left-4 glass-panel p-3 rounded border border-white/5 hidden md:block">
@@ -248,7 +239,8 @@
                 <h2 class="font-headline text-4xl font-bold mb-4">Precision Engineering for <span
                         class="text-primary">Playable Ads</span></h2>
                 <p class="text-on-surface-variant max-w-xl">Every pixel counts when you have 5 seconds to capture a
-                    user's attention. Pix3 is built for the technical alchemy of conversion.</p>
+                    user's attention. Pix3 is built for the technical alchemy of conversion — for both 2D sprite
+                    creatives and full 3D scenes.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
                 <!-- Feature 1: AI Asset Creation -->
@@ -260,8 +252,9 @@
                             <h3 class="font-headline text-2xl font-bold mb-3 text-on-surface">AI-Powered Asset Creation
                                 &amp; Optimization</h3>
                             <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
-                                Reduce 3D model weight by up to 90% without losing visual fidelity. Our AI agent handles
-                                mesh decimation, texture atlas generation, and Draco compression automatically.
+                                Cut creative weight by up to 90% without losing visual fidelity. Our AI agent handles
+                                mesh decimation and Draco compression for 3D, plus sprite atlas packing and adaptive
+                                texture compression for 2D — automatically.
                             </p>
                             <div class="flex flex-wrap gap-2">
                                 <span
@@ -272,14 +265,18 @@
                                 <span
                                     class="px-2 py-1 bg-surface-container-highest text-[10px] font-bold text-primary uppercase rounded">LOD
                                     Gen</span>
+                                <span
+                                    class="px-2 py-1 bg-surface-container-highest text-[10px] font-bold text-primary uppercase rounded">Sprite
+                                    Atlas</span>
                             </div>
                         </div>
                         <div class="flex-1 bg-surface-container-lowest rounded p-4 border border-outline-variant/10">
                             <picture>
                                 <source srcset="media/ai-asset-schematic.webp" type="image/webp">
                                 <img class="w-full h-full object-cover rounded opacity-80"
-                                    data-alt="Technical schematic showing a 3D robot model being optimized from high poly to low poly mesh with statistics overlays"
-                                    src="media/ai-asset-schematic.png" />
+                                    alt="Technical schematic showing a 3D robot model being optimized from high poly to low poly mesh with statistics overlays"
+                                    src="media/ai-asset-schematic.png" width="512" height="512"
+                                    loading="lazy" decoding="async" />
                             </picture>
                         </div>
                     </div>
@@ -310,10 +307,11 @@
                 <div
                     class="md:col-span-5 bg-surface-container-low rounded-lg p-8 border border-outline-variant/10 hover:border-primary/30 transition-colors">
                     <svg class="w-8 h-8 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-                    <h3 class="font-headline text-2xl font-bold mb-3 text-on-surface">Figma for 3D Games</h3>
+                    <h3 class="font-headline text-2xl font-bold mb-3 text-on-surface">Figma for 2D &amp; 3D Games</h3>
                     <p class="text-on-surface-variant text-sm leading-relaxed">
-                        Collaborate in real-time. Designers edit materials while developers debug logic in the same
-                        scene. Version control and branching built directly into the viewport.
+                        Collaborate in real-time across 2D layouts and 3D scenes. Designers edit materials and sprites
+                        while developers debug logic in the same project. Version control and branching built directly
+                        into the viewport.
                     </p>
                 </div>
                 <!-- Feature 4: Asset Library -->
@@ -325,8 +323,9 @@
                             <h3 class="font-headline text-2xl font-bold mb-3 text-on-surface">AI Compositor &amp;
                                 Library</h3>
                             <p class="text-on-surface-variant text-sm leading-relaxed">
-                                Access 10k+ pre-optimized low-poly assets. Use natural language to compose scenes—"Add a
-                                cyberpunk street with neon signs and rainy floor reflections."
+                                Access 10k+ pre-optimized assets — low-poly 3D models and 2D sprite packs. Use natural
+                                language to compose scenes: "Add a cyberpunk street with neon signs and rainy floor
+                                reflections."
                             </p>
                         </div>
                         <div
@@ -334,8 +333,9 @@
                             <picture>
                                 <source srcset="media/asset-library-grid.webp" type="image/webp">
                                 <img class="w-full h-full object-cover"
-                                    data-alt="Grid view of 3D assets library including icons for stylized trees, characters, and UI elements in a dark mode interface"
-                                    src="media/asset-library-grid.png" />
+                                    alt="Grid view of 3D assets library including icons for stylized trees, characters, and UI elements in a dark mode interface"
+                                    src="media/asset-library-grid.png" width="512" height="512"
+                                    loading="lazy" decoding="async" />
                             </picture>
                         </div>
                     </div>
@@ -428,8 +428,9 @@ entity.addComponent(Collider);</code></pre>
                     <picture>
                         <source srcset="media/bridge-visual.webp" type="image/webp">
                         <img class="w-full h-full object-cover grayscale opacity-50"
-                            data-alt="Abstract visualization of a digital bridge connecting a web browser to multiple app store icons in a futuristic tech aesthetic"
-                            src="media/bridge-visual.png" />
+                            alt="Abstract visualization of a digital bridge connecting a web browser to multiple app store icons in a futuristic tech aesthetic"
+                            src="media/bridge-visual.png" width="512" height="512"
+                            loading="lazy" decoding="async" />
                     </picture>
                     <div class="absolute inset-0 flex items-center justify-center">
                         <svg class="w-24 h-24 text-primary opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.585 15.585a6.215 6.215 0 001.353-1.353L21 10.322a3.522 3.522 0 10-4.981-4.981l-3.91 3.91a6.215 6.215 0 00-1.353 1.353m5.829 5.829a6.215 6.215 0 01-1.353 1.353L10.322 21a3.522 3.522 0 11-4.981-4.981l3.91-3.91a6.215 6.215 0 011.353-1.353m5.829 5.829a6.215 6.215 0 11-5.83-5.83"></path></svg>
@@ -446,7 +447,7 @@ entity.addComponent(Collider);</code></pre>
             <h2 class="font-headline text-4xl font-black text-on-primary mb-6 relative z-10">READY TO ASCEND?</h2>
             <p class="text-on-primary/80 font-medium mb-10 max-w-xl mx-auto relative z-10">
                 Join the beta today and join the top 1% of creative studios building the next generation of interactive
-                3D content.
+                2D &amp; 3D content.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
                 <button
@@ -467,7 +468,8 @@ entity.addComponent(Collider);</code></pre>
                 <div class="col-span-2 md:col-span-1">
                     <div class="text-lg font-black text-zinc-200 mb-4 font-headline uppercase">Pix3</div>
                     <p class="font-['Inter'] text-xs text-zinc-500 leading-relaxed max-w-[200px]">
-                        The technical editor for high-performance 3D creatives. Engineered for the alchemist developer.
+                        The technical editor for high-performance 2D &amp; 3D creatives. Engineered for the alchemist
+                        developer.
                     </p>
                 </div>
                 <div>
@@ -503,7 +505,7 @@ entity.addComponent(Collider);</code></pre>
                 </div>
             </div>
             <div class="pt-8 border-t border-zinc-900/50 flex flex-col md:flex-row justify-between items-center gap-4">
-                <span class="font-['Inter'] text-xs text-zinc-500">© 2024 Pix3 Technologies. Built for the Technical
+                <span class="font-['Inter'] text-xs text-zinc-500">© 2026 Pix3 Technologies. Built for the Technical
                     Alchemist.</span>
                 <div class="flex gap-6">
                     <svg class="w-5 h-5 text-zinc-700 hover:text-primary transition-colors cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
@@ -512,6 +514,26 @@ entity.addComponent(Collider);</code></pre>
             </div>
         </div>
     </footer>
+
+    <!-- Yandex.Metrika counter (loaded after first paint) -->
+    <script>
+        (function () {
+            function loadMetrika() {
+                (function (m, e, t, r, i, k, a) {
+                    m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+                    m[i].l = 1 * new Date();
+                    for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+                    k = e.createElement(t); a = e.getElementsByTagName(t)[0]; k.async = 1; k.src = r; a.parentNode.insertBefore(k, a);
+                })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=108302071', 'ym');
+                ym(108302071, 'init', { ssr: true, webvisor: true, clickmap: true, ecommerce: 'dataLayer', referrer: document.referrer, url: location.href, accurateTrackBounce: true, trackLinks: true });
+            }
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(loadMetrika, { timeout: 3000 });
+            } else {
+                window.addEventListener('load', function () { setTimeout(loadMetrika, 1500); });
+            }
+        })();
+    </script>
 </body>
 
 </html>

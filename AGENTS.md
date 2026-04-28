@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Pix3 is a landing page website for a WebGL 3D playable ads engine. The project uses Vite for building and Tailwind CSS v4. It is deployed to GitHub Pages.
+Pix3 is a landing page website for a WebGL playable-ads engine that supports both 2D and 3D content through a unified Three.js pipeline. The project uses Vite for building and Tailwind CSS v4. It is deployed to GitHub Pages.
 
 ## Project Structure
 
